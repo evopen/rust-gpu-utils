@@ -1,3 +1,11 @@
+#![cfg_attr(
+    target_arch = "spirv",
+    no_std,
+    feature(register_attr),
+    register_attr(spirv)
+)]
+#![allow(dead_code, unused_imports, unused)]
+
 use spirv_std::glam::Vec3;
 
 // [0, 1] float rng
